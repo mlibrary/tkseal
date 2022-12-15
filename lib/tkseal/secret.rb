@@ -1,5 +1,10 @@
 module TKSeal
   class Secrets
+    def self.for_tk_env(path, tk_enviroment = TKSeal::TK::Environment, kubectl = TKSeal::Kubectl)
+      env = tk_enviroment.new(path)
+      raw_secrets = kubectl.get_secrets(context: env.context, namespace: env.namespace)
+      new(raw_secrets)
+    end
     attr_reader :list
     def initialize(raw)
       @list = raw["items"].filter do |x|

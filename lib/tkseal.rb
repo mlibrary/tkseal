@@ -8,6 +8,7 @@ require "diffy"
 
 require_relative "tkseal/version"
 require_relative "tkseal/secret"
+require_relative "tkseal/diff"
 require_relative "tkseal/tk"
 require_relative "tkseal/kubectl"
 
