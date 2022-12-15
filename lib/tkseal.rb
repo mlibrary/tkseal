@@ -5,6 +5,7 @@ require "json"
 require "base64"
 require "ostruct"
 require "diffy"
+require "thor"
 
 require_relative "tkseal/version"
 require_relative "tkseal/secret"
@@ -12,6 +13,7 @@ require_relative "tkseal/secret_state"
 require_relative "tkseal/diff"
 require_relative "tkseal/tk"
 require_relative "tkseal/kubectl"
+require_relative "tkseal/cli"
 
 module TKSeal
   Diffy::Diff.default_format = :color
@@ -28,3 +30,5 @@ module TKSeal
     end
   end
 end
+
+TKSeal::CLI.start(ARGV)
