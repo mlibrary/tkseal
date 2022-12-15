@@ -11,7 +11,7 @@ require_relative "tkseal/secret"
 require_relative "tkseal/tk"
 require_relative "tkseal/kubectl"
 
-module Tkseal
+module TKSeal
   class Error < StandardError; end
   # Your code goes here...
 end
