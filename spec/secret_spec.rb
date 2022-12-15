@@ -1,4 +1,4 @@
-RSpec.describe Secrets do
+RSpec.describe TKSeal::Secrets do
   before(:each) do
     @secrets = YAML.safe_load(fixture("secrets.yaml"))
   end
@@ -28,7 +28,7 @@ RSpec.describe Secrets do
     end
   end
 end
-RSpec.describe Secret do
+RSpec.describe TKSeal::Secret do
   before(:each) do
     @secret = YAML.safe_load(fixture("secrets.yaml"))["items"][0]
   end

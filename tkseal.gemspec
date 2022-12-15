@@ -4,7 +4,7 @@ require_relative "lib/tkseal/version"
 
 Gem::Specification.new do |spec|
   spec.name = "tkseal"
-  spec.version = Tkseal::VERSION
+  spec.version = TKSeal::VERSION
   spec.authors = ["Monique Rio"]
   spec.email = ["mrio@umich.edu"]
 

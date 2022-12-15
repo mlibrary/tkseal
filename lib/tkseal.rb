@@ -7,7 +7,9 @@ require "ostruct"
 require "diffy"
 
 require_relative "tkseal/version"
-require_relative "secret"
+require_relative "tkseal/secret"
+require_relative "tkseal/tk"
+require_relative "tkseal/kubectl"
 
 module Tkseal
   class Error < StandardError; end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe Tkseal do
+RSpec.describe TKSeal do
   it "has a version number" do
-    expect(Tkseal::VERSION).not_to be nil
+    expect(TKSeal::VERSION).not_to be nil
   end
 end
