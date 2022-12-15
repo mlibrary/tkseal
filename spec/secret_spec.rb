@@ -1,6 +1,36 @@
+RSpec.describe Secrets do
+  before(:each) do
+    @secrets = YAML.safe_load(fixture("secrets.yaml"))
+  end
+  subject do
+    described_class.new(@secrets)
+  end
+  context "#list" do
+    it "returns an array of opaque secrets" do
+      list = subject.list
+      expect(list.count).to eq(1)
+      expect(list.first.name).to eq("example")
+    end
+  end
+  context "#to_json" do
+    it "returns expected json string" do
+      json_string = JSON.pretty_generate(
+        [
+          {
+            name: "example",
+            data: {
+              EXAMPLE_SECRET: "example_secret"
+            }
+          }
+        ]
+      )
+      expect(subject.to_json).to eq(json_string)
+    end
+  end
+end
 RSpec.describe Secret do
   before(:each) do
-    @secret = YAML.safe_load(fixture("secrets.yaml"))[0]
+    @secret = YAML.safe_load(fixture("secrets.yaml"))["items"][0]
   end
   subject do
     described_class.new(@secret)
