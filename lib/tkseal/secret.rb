@@ -14,7 +14,7 @@ module TKSeal
       end
     end
 
-    def to_json
+    def to_s
       ::JSON.pretty_generate(
         @list.map do |secret|
           {

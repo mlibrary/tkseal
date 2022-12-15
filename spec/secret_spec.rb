@@ -12,7 +12,7 @@ RSpec.describe TKSeal::Secrets do
       expect(list.first.name).to eq("example")
     end
   end
-  context "#to_json" do
+  context "#to_s" do
     it "returns expected json string" do
       json_string = JSON.pretty_generate(
         [
@@ -24,7 +24,7 @@ RSpec.describe TKSeal::Secrets do
           }
         ]
       )
-      expect(subject.to_json).to eq(json_string)
+      expect(subject.to_s).to eq(json_string)
     end
   end
 end
