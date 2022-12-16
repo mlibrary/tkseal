@@ -21,6 +21,10 @@ module TKSeal
   Diffy::Diff.default_format = :color
   class Error < StandardError; end
 
+  def self.ready?
+    Kubectl.exists? && TK.exists? && Kubeseal.exists?
+  end
+
   # Your code goes here...
   class Configuration
     def self.plain_secrets_file
