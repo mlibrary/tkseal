@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/mlibrary/tkseal/compare/v1.1.0...v1.1.1) (2022-12-16)
+
+
+### Bug Fixes
+
+* put in diff for seal ([2e18ddd](https://github.com/mlibrary/tkseal/commit/2e18ddd60d161448e660cb2a66ee280b60bad4d0))
+
 ## [1.1.0](https://github.com/mlibrary/tkseal/compare/v1.0.0...v1.1.0) (2022-12-16)
 
 
