@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "CLI to aid in sealed secrets for tanka config repository"
   spec.homepage = "https://github.com/mlibrary/tkseal"
   spec.license = "BSD-3-Clause"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 2.7"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/mlibrary"
 
