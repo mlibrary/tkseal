@@ -46,6 +46,7 @@ module TKSeal
       raise TKSeal::Error.new("TKSeal Error: a dependency is missing. run `tkseal ready` to find out what.") unless TKSeal.ready?
       ss = TKSeal::SecretState.new(path)
       say("This shows what would change in the cluster based on \"plain_secrets.json\"", :yellow)
+      Diff.new(ss).plain
       if yes?("Are you sure?")
         TKSeal::Seal.new(ss).run
       end
