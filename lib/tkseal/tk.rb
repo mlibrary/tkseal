@@ -1,4 +1,5 @@
 module TKSeal
+  # :nocov:
   class TK
     def self.exists?
       `which tk` != ""
@@ -12,6 +13,7 @@ module TKSeal
       puts e.message
       exit
     end
+    # :nocov:
 
     class Environment
       attr_reader :status

@@ -7,12 +7,22 @@ module TKSeal
 
     def pull
       # changes that pulling the kube secrets into plain would make
-      puts Diffy::Diff.new(@secret_state.plain_secrets, @secret_state.kube_secrets).to_s
+      output = Diffy::Diff.new(@secret_state.plain_secrets, @secret_state.kube_secrets).to_s
+      if output == "\n"
+        puts "No differences"
+      else
+        puts output
+      end
     end
 
     def plain
       # changes that would be made to kube by plain secrets
-      puts Diffy::Diff.new(@secret_state.kube_secrets, @secret_state.plain_secrets).to_s
+      output = Diffy::Diff.new(@secret_state.kube_secrets, @secret_state.plain_secrets).to_s
+      if output == "\n"
+        puts "No differences\n"
+      else
+        puts output
+      end
     end
   end
 end

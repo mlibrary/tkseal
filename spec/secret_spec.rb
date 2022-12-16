@@ -5,6 +5,17 @@ RSpec.describe TKSeal::Secrets do
   subject do
     described_class.new(@secrets)
   end
+  context ".for_tk_env" do
+    it "receives expected messages for getting Secrets from kubernetes" do
+      env_dbl = instance_double(TKSeal::TK::Environment, context: "context", namespace: "namespace")
+      env_class_dbl = class_double(TKSeal::TK::Environment, new: env_dbl)
+      kubectl_dbl = class_double(TKSeal::Kubectl, get_secrets: {"items" => []})
+      expect(env_dbl).to receive(:context)
+      expect(env_dbl).to receive(:namespace)
+      expect(kubectl_dbl).to receive(:get_secrets)
+      described_class.for_tk_env("some/path", env_class_dbl, kubectl_dbl)
+    end
+  end
   context "#list" do
     it "returns an array of opaque secrets" do
       list = subject.list

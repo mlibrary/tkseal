@@ -21,9 +21,11 @@ module TKSeal
   Diffy::Diff.default_format = :color
   class Error < StandardError; end
 
+  # :nocov:
   def self.ready?
     Kubectl.exists? && TK.exists? && Kubeseal.exists?
   end
+  # :nocov:
 
   # Your code goes here...
   class Configuration

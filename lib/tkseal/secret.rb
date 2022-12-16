@@ -1,7 +1,7 @@
 module TKSeal
   class Secrets
-    def self.for_tk_env(path, tk_enviroment = TKSeal::TK::Environment, kubectl = TKSeal::Kubectl)
-      env = tk_enviroment.new(path)
+    def self.for_tk_env(path, tk_environment = TKSeal::TK::Environment, kubectl = TKSeal::Kubectl)
+      env = tk_environment.new(path)
       raw_secrets = kubectl.get_secrets(context: env.context, namespace: env.namespace)
       new(raw_secrets)
     end
