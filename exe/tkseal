@@ -1,4 +1,4 @@
- #!/usr/bin/env ruby
- require "tkseal"
+#!/usr/bin/env ruby
+require "tkseal"
 
- TKSeal::CLI.start
+TKSeal::CLI.start
