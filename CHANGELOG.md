@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/mlibrary/tkseal/compare/v1.0.0...v1.1.0) (2022-12-16)
+
+
+### Features
+
+* adds seal command ([a3a7075](https://github.com/mlibrary/tkseal/commit/a3a7075a2c36f54e9cd372c06824592d09aa2612))
+* adds support for ruby 2.7 ([9b90cc9](https://github.com/mlibrary/tkseal/commit/9b90cc970035b557441d3d31a50e737c3559b483))
+
+
+### Bug Fixes
+
+* adds dependency check ([5d73055](https://github.com/mlibrary/tkseal/commit/5d73055a0dfc1cb5a6eeae2be4d984026661bdb2))
+
 ## 1.0.0 (2022-12-16)
 
 
