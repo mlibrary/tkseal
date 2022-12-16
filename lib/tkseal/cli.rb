@@ -15,5 +15,11 @@ module TKSeal
         File.write(ss.plain_secrets_file_path, ss.kube_secrets)
       end
     end
+
+    desc("seal PATH", "seals the \"unencrypted_secrets.json\" file for the given PATH")
+    def seal(path)
+      ss = TKSeal::SecretState.new(path)
+      TKSeal::Seal.new(ss).run
+    end
   end
 end

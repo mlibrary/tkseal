@@ -11,8 +11,10 @@ require_relative "tkseal/version"
 require_relative "tkseal/secret"
 require_relative "tkseal/secret_state"
 require_relative "tkseal/diff"
+require_relative "tkseal/seal"
 require_relative "tkseal/tk"
 require_relative "tkseal/kubectl"
+require_relative "tkseal/kubeseal"
 require_relative "tkseal/cli"
 
 module TKSeal
