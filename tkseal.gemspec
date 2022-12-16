@@ -11,10 +11,10 @@ Gem::Specification.new do |spec|
   spec.summary = "CLI to aid in sealed secrets for tanka config repository"
   spec.description = "CLI to aid in sealed secrets for tanka config repository"
   spec.homepage = "https://github.com/mlibrary/tkseal"
-  spec.license = "MIT"
+  spec.license = "BSD-3-Clause"
   spec.required_ruby_version = ">= 3.0.0"
 
-  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/mlibrary"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/mlibrary/tkseal"
