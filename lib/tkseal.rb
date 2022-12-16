@@ -30,5 +30,3 @@ module TKSeal
     end
   end
 end
-
-TKSeal::CLI.start(ARGV)
