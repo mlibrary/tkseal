@@ -34,7 +34,8 @@ RSpec.describe TKSeal::Seal do
       @sealed_secret_file.unlink
     end
 
-    it "writes expected sealed secret to the file" do
+    it "writes expected sealed secret to the file and calls kubeseal with the correct params" do
+      expect(@kubeseal_dbl).to receive(:seal).with(name: "name", value: "example_secret_value", context: @secret_state.context, namespace: @secret_state.namespace)
       subject.run
       @sealed_secret_file.rewind
       expect(JSON.parse(@sealed_secret_file.read)).to eq(

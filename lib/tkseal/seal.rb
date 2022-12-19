@@ -23,7 +23,7 @@ module TKSeal
               }
             },
             encryptedData: secret["data"].to_a.map do |pair|
-              [pair[0], kubeseal(name: pair[0], value: pair[1])]
+              [pair[0], kubeseal(name: secret["name"], value: pair[1])]
             end.to_h
           }
         }
