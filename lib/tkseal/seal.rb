@@ -19,8 +19,7 @@ module TKSeal
               metadata: {
                 name: secret["name"],
                 namespace: @secret_state.namespace
-              },
-              type: "Opaque"
+              }
             },
             encryptedData: secret["data"].to_a.map do |pair|
               [pair[0], kubeseal(name: pair[0], value: pair[1])]
