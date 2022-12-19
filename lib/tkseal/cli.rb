@@ -72,5 +72,9 @@ module TKSeal
         say("❌ kubeseal is NOT installed", :red)
       end
     end
+    desc("version", "returns the installed version of the application")
+    def version
+      say(TKSeal::VERSION)
+    end
   end
 end
