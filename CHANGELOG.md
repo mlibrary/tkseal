@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/mlibrary/tkseal/compare/v1.1.1...v1.2.0) (2022-12-19)
+
+
+### Features
+
+* adds version command to cli ([20c9290](https://github.com/mlibrary/tkseal/commit/20c92905687d926b94b152ad8df4e238bd2eecd8))
+
+
+### Bug Fixes
+
+* fixes bug in TKSeal::Seal ([39388ad](https://github.com/mlibrary/tkseal/commit/39388ad2184574cbb174f94e32b72a9b153cb053))
+* removes Opaque from sealed secret output ([cc1c3e5](https://github.com/mlibrary/tkseal/commit/cc1c3e54f1ff49334c180ee917082cb3bcc51aba))
+
 ## [1.1.1](https://github.com/mlibrary/tkseal/compare/v1.1.0...v1.1.1) (2022-12-16)
 
 
