@@ -1,8 +1,19 @@
 # Tkseal
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tkseal`. To experiment with that code, run `bin/console` for an interactive prompt.
+A CLI for maintaining sealed secrets in tanka configuration repositories.
 
-TODO: Delete this and the text above, and describe your gem
+The tool knows which kuberentes context and namespace to use by reading the configuration in a tanka [environment](https://tanka.dev/tutorial/environments) directory. It can generate a `plain_secrets.json` file by looking at the existing Opaque secrets for the appropriate kuberentes context and namespace. It can then read the `plain_secrets.json` file in the environment directory, and generate a `sealed_secrets.json`. This `sealed_secrets.json` can be included in the `main.jsonnet` file like so:
+```
+{ secrets: import 'sealed_secrets.json' }
+```
+
+## Dependencies
+* `ruby` > 2.7
+* `kubectl`
+* `tk`
+* `kubeseal`
+
+
 
 ## Installation
 
@@ -10,8 +21,31 @@ TODO: Delete this and the text above, and describe your gem
 
 
 ## Usage
+```
+tkseal diff PATH   
+```
+Shows the difference between "plain_secrets.json" and the Opaque kuberentes secrets associated with the tk environment PATH <br><br>
 
-TODO: Write usage instructions here
+```
+  tkseal pull PATH       
+```
+Saves a copy of the unencrypted Opaque secrets in the kubernetes cluster associated with the given tanka environment PATH to the file "plain_secrets.json", which is also located in the given tanka environment PATH.<br><br>
+
+```
+tkseal seal PATH       
+```
+Takes the secrets in "plain_secerets.json" in the given tanka environment PATH, seal them with `kubeseal` and save the resulting sealed secrets to "sealed_secrets.json" in the given tanka environment path.<br><br>
+
+```
+tkseal ready           
+```
+Checks that the cli dependencies are available in your shell<br><br>
+
+```
+tkseal version         
+```
+Returns the installed version of the application
+
 
 ## Contributing
 
