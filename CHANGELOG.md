@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.1](https://github.com/mlibrary/tkseal/compare/v1.2.0...v1.2.1) (2023-04-27)
+
+
+### Bug Fixes
+
+* changes LICENSE to actual BSD-3-Clause ([edd750a](https://github.com/mlibrary/tkseal/commit/edd750aea99e3b20d226149ca7e26aaa2a3cd8a2))
+* handles large secrets like private rsa keys ([a2b7de5](https://github.com/mlibrary/tkseal/commit/a2b7de55f3a26442c1a8c9fcb532ad9f52b066b4))
+* tk_env_path handles a variety of tk paths ([b48f785](https://github.com/mlibrary/tkseal/commit/b48f7856dd7d9c5323049ce1331d4be7a4e51eb2))
+
 ## [1.2.0](https://github.com/mlibrary/tkseal/compare/v1.1.1...v1.2.0) (2022-12-19)
 
 
