@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/mlibrary/tkseal/compare/v1.2.1...v1.2.2) (2023-05-01)
+
+
+### Bug Fixes
+
+* changes echo to printf ([94c5e95](https://github.com/mlibrary/tkseal/commit/94c5e95eb08de023e9e230f2d4c0b51b859b550f))
+
 ## [1.2.1](https://github.com/mlibrary/tkseal/compare/v1.2.0...v1.2.1) (2023-04-27)
 
 
