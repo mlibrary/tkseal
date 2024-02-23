@@ -6,6 +6,7 @@ require "base64"
 require "ostruct"
 require "diffy"
 require "thor"
+require "forwardable"
 
 require_relative "tkseal/version"
 require_relative "tkseal/secret"
