@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/mlibrary/tkseal/compare/v1.2.2...v1.2.3) (2024-02-23)
+
+
+### Bug Fixes
+
+* explicitly require forwardable ([2601454](https://github.com/mlibrary/tkseal/commit/260145430bfd943a9e584b124c1e1585bb29e58f))
+
 ## [1.2.2](https://github.com/mlibrary/tkseal/compare/v1.2.1...v1.2.2) (2023-05-01)
 
 
