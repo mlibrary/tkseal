@@ -6,7 +6,7 @@ module TKSeal
     end
 
     def self.seal(context:, namespace:, name:, value:)
-      `printf "%s" "#{value}" | kubeseal --raw --namespace #{namespace} --name #{name} --context #{context}`
+      `printf "%s" '#{value}' | kubeseal --raw --namespace #{namespace} --name #{name} --context #{context}`
     end
     # :nocov:
   end
