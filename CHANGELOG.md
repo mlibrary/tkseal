@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/mlibrary/tkseal/compare/v1.2.3...v1.2.4) (2024-06-24)
+
+
+### Bug Fixes
+
+* Merge pull request [#12](https://github.com/mlibrary/tkseal/issues/12) from mlibrary/fix-shell-quoting ([dacfb0b](https://github.com/mlibrary/tkseal/commit/dacfb0be4f3b3939030f5661bccd50ca8e4badde))
+
 ## [1.2.3](https://github.com/mlibrary/tkseal/compare/v1.2.2...v1.2.3) (2024-02-23)
 
 
