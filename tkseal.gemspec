@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "thor"
   spec.add_dependency "diffy", "~> 3.4", ">= 3.4.2"
+  spec.add_dependency "base64"
   spec.add_development_dependency "rspec", "~> 3.12"
   spec.add_development_dependency "standard"
   spec.add_development_dependency "pry-byebug"
