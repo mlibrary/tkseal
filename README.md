@@ -9,11 +9,9 @@ The tool knows which kuberentes context and namespace to use by reading the conf
 
 ## Dependencies
 * `ruby` > 2.7
-* `kubectl`
-* `tk`
-* `kubeseal`
-
-
+* `kubectl` (
+* Grafana Tanka (`tk`) ([install instructions](https://tanka.dev/install/))
+* `kubeseal` ([install instructions](https://github.com/bitnami-labs/sealed-secrets?tab=readme-ov-file#kubeseal))
 
 ## Installation
 
