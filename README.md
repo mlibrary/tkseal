@@ -17,8 +17,12 @@ The tool knows which kuberentes context and namespace to use by reading the conf
 
 ## Installation
 
-    $ gem install tkseal --version "WHATEVER_THE_CURRENT_VERSION_IS" --source "https://YOUR_GITHUB_USERNAME:YOUR_GITHUB_PAT_WITH_READ_PACKAGES@rubygems.pkg.github.com/mlibrary"
-
+```bash
+git clone https://github.com/mlibrary/tkseal/
+cd tkseal
+gem build tkseal.gemspec
+gem install ./tkseal-1.2.4.gem # or whatever the current version is
+```
 
 ## Usage
 ```
