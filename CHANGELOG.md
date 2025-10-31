@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/mlibrary/tkseal/compare/v1.2.4...v1.2.5) (2025-10-31)
+
+
+### Bug Fixes
+
+* add ostruct to dependencies ([0509131](https://github.com/mlibrary/tkseal/commit/05091315d52b64105dbe607a654b08a3db963a0f))
+
 ## [1.2.4](https://github.com/mlibrary/tkseal/compare/v1.2.3...v1.2.4) (2024-06-24)
 
 
