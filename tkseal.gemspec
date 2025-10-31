@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.executables = ["tkseal"]
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "ostruct"
   spec.add_dependency "thor"
   spec.add_dependency "diffy", "~> 3.4", ">= 3.4.2"
   spec.add_dependency "base64"
