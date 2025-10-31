@@ -1,6 +1,7 @@
 module TKSeal
   class SecretState
     extend Forwardable
+
     def_delegators :@tk_env, :context, :namespace
     attr_reader :plain_secrets_file_path, :sealed_secrets_file_path
     def initialize(tk_env_path, configuration = TKSeal::Configuration, tk_env_getter = TKSeal::TK::Environment)
